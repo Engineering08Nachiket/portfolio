@@ -1,1 +1,73 @@
-<!doctype html><title>It works!</title><h1>Hello from GitHub Pages</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nachiket Kulkarni — Portfolio</title>
+  <meta name="description" content="Projects, experience, and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">NK</div>
+    <nav class="nav">
+      <a href="#about" data-nav>About</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#contact" data-nav>Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h1>Hi, I’m Nachiket.</h1>
+      <p>I build interactive simulations, vehicle dynamics controllers, and acoustic analysis tools. This portfolio highlights selected projects and experience.</p>
+      <div class="cta-row">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="./assets/Nachiket_Kulkarni_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div id="projectGrid" class="grid"></div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <div class="time">Summer 2025</div>
+          <div class="card">
+            <h3>Electric Drive & Battery Engineering Intern — Dassault Systèmes SIMULIA</h3>
+            <p>Parametric templates for EDUs, lubrication channel modeling, and workflow integration for optimization.</p>
+          </div>
+        </li>
+        <!-- Add more roles here -->
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form id="contactForm" class="card form" action="https://formspree.io/f/yourFormId" method="POST">
+        <label>Name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send</button>
+        <p class="form-note">This form uses Formspree. Replace the action URL with your own endpoint.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Nachiket Kulkarni</span>
+    <a href="https://github.com/<your-username>/portfolio" target="_blank" rel="noopener">Source</a>
+  </footer>
+
+  <script type="module" src="./script.js"></script>
+  <script type="module" src="./projects.js"></script>
+</body>
+</html>
