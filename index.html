@@ -4,26 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nachiket Kulkarni — Portfolio</title>
-  <meta name="description" content="Noise & vibration, controls, and aerodynamics projects by Nachiket Kulkarni." />
+  <meta name="description" content="Portfolio featuring Aerodynamics, Controls, and NVH work by Nachiket Kulkarni." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
-  <link rel="icon" href="./assets/favicon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="brand">NK</div>
     <nav class="nav">
-      <a href="#nvh" data-nav>Noise & Vibrations</a>
-      <a href="#controls" data-nav>Controls</a>
       <a href="#aero" data-nav>Aerodynamics</a>
-      <a href="#contact" data-nav>Contact</a>
+      <a href="#controls" data-nav>Controls</a>
+      <a href="#nvh" data-nav>Noise & Vibrations</a>
       <button id="themeToggle" aria-label="Toggle theme">🌓</button>
     </nav>
   </header>
 
   <main>
-
     <!-- THREE-PANEL LANDING -->
     <section id="landing3" class="landing3">
       <a href="#aero" class="panel panel-aero" aria-label="Go to Aerodynamics">
@@ -41,60 +38,10 @@
         <img src="./assets/nvh.png" alt="NVH airflow and components" loading="lazy">
       </a>
     </section>
-
-    <!-- Intro (optional blurb) -->
-    <section id="about" class="section">
-      <h1>Hi, I’m Nachiket.</h1>
-      <p>I build interactive simulations, vehicle dynamics controllers, and acoustic analysis tools across three focus areas: Noise & Vibrations, Controls, and Aerodynamics.</p>
-      <div class="cta-row">
-        <a class="btn" href="#controls">View Projects</a>
-        <a class="btn ghost" href="./assets/Nachiket_Kulkarni_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-      </div>
-    </section>
-
-    <!-- Section 1: Noise & Vibrations -->
-    <section id="nvh" class="section band band-nvh">
-      <header class="band-header">
-        <h2>Noise & Vibrations</h2>
-        <p>Acoustics, psychoacoustics, vibration testing, and sound-quality metrics.</p>
-      </header>
-      <div id="grid-nvh" class="grid"></div>
-    </section>
-
-    <!-- Section 2: Controls -->
-    <section id="controls" class="section band band-controls">
-      <header class="band-header">
-        <h2>Controls</h2>
-        <p>Model predictive control, state estimation, and real-time implementations.</p>
-      </header>
-      <div id="grid-controls" class="grid"></div>
-    </section>
-
-    <!-- Section 3: Aerodynamics -->
-    <section id="aero" class="section band band-aero">
-      <header class="band-header">
-        <h2>Aerodynamics</h2>
-        <p>CFD studies, drag/downforce trade-offs, and parametric design.</p>
-      </header>
-      <div id="grid-aero" class="grid"></div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <form id="contactForm" class="card form" action="https://formspree.io/f/yourFormId" method="POST">
-        <label>Name<input name="name" required></label>
-        <label>Email<input name="email" type="email" required></label>
-        <label>Message<textarea name="message" rows="5" required></textarea></label>
-        <button class="btn" type="submit">Send</button>
-        <p class="form-note">This form uses Formspree. Replace the action URL with your own endpoint.</p>
-      </form>
-    </section>
   </main>
 
   <footer class="site-footer">
     <span>© <span id="year"></span> Nachiket Kulkarni</span>
-    <a href="https://github.com/<your-username>/<repo-name>" target="_blank" rel="noopener">Source</a>
   </footer>
 
   <script type="module" src="./script.js"></script>
