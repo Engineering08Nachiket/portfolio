@@ -4,70 +4,82 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nachiket Kulkarni — Portfolio</title>
-  <meta name="description" content="Projects, experience, and contact." />
+  <meta name="description" content="Noise & vibration, controls, and aerodynamics projects by Nachiket Kulkarni." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./assets/favicon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="brand">NK</div>
     <nav class="nav">
-      <a href="#about" data-nav>About</a>
-      <a href="#projects" data-nav>Projects</a>
-      <a href="#experience" data-nav>Experience</a>
+      <a href="#nvh" data-nav>Noise & Vibrations</a>
+      <a href="#controls" data-nav>Controls</a>
+      <a href="#aero" data-nav>Aerodynamics</a>
       <a href="#contact" data-nav>Contact</a>
       <button id="themeToggle" aria-label="Toggle theme">🌓</button>
     </nav>
   </header>
 
   <main>
+
     <!-- THREE-PANEL LANDING -->
-<section id="landing3" class="landing3">
-  <a href="#aero" class="panel panel-aero">
-    <div class="overlay"><h1>AERODYNAMICS</h1></div>
-    <img src="./assets/aero.jpg" alt="Aerodynamics visualization" loading="eager">
-  </a>
+    <section id="landing3" class="landing3">
+      <a href="#aero" class="panel panel-aero" aria-label="Go to Aerodynamics">
+        <div class="overlay"><h1>AERODYNAMICS</h1></div>
+        <img src="./assets/aero.png" alt="Aerodynamics visualization" loading="eager">
+      </a>
 
-  <a href="#controls" class="panel panel-controls">
-    <div class="overlay"><h1>CONTROLS</h1></div>
-    <img src="./assets/controls.jpg" alt="Vehicle control systems" loading="lazy">
-  </a>
+      <a href="#controls" class="panel panel-controls" aria-label="Go to Controls">
+        <div class="overlay"><h1>CONTROLS</h1></div>
+        <img src="./assets/controls.png" alt="Vehicle control systems" loading="lazy">
+      </a>
 
-  <a href="#nvh" class="panel panel-nvh">
-    <div class="overlay"><h1>NOISE VIBRATION &amp; HARSHNESS</h1></div>
-    <img src="./assets/nvh.jpg" alt="NVH airflow and components" loading="lazy">
-  </a>
-</section>
+      <a href="#nvh" class="panel panel-nvh" aria-label="Go to Noise, Vibration & Harshness">
+        <div class="overlay"><h1>NOISE VIBRATION &amp; HARSHNESS</h1></div>
+        <img src="./assets/nvh.png" alt="NVH airflow and components" loading="lazy">
+      </a>
+    </section>
 
+    <!-- Intro (optional blurb) -->
     <section id="about" class="section">
       <h1>Hi, I’m Nachiket.</h1>
-      <p>I build interactive simulations, vehicle dynamics controllers, and acoustic analysis tools. This portfolio highlights selected projects and experience.</p>
+      <p>I build interactive simulations, vehicle dynamics controllers, and acoustic analysis tools across three focus areas: Noise & Vibrations, Controls, and Aerodynamics.</p>
       <div class="cta-row">
-        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn" href="#controls">View Projects</a>
         <a class="btn ghost" href="./assets/Nachiket_Kulkarni_Resume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div id="projectGrid" class="grid"></div>
+    <!-- Section 1: Noise & Vibrations -->
+    <section id="nvh" class="section band band-nvh">
+      <header class="band-header">
+        <h2>Noise & Vibrations</h2>
+        <p>Acoustics, psychoacoustics, vibration testing, and sound-quality metrics.</p>
+      </header>
+      <div id="grid-nvh" class="grid"></div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li>
-          <div class="time">Summer 2025</div>
-          <div class="card">
-            <h3>Electric Drive & Battery Engineering Intern — Dassault Systèmes SIMULIA</h3>
-            <p>Parametric templates for EDUs, lubrication channel modeling, and workflow integration for optimization.</p>
-          </div>
-        </li>
-        <!-- Add more roles here -->
-      </ul>
+    <!-- Section 2: Controls -->
+    <section id="controls" class="section band band-controls">
+      <header class="band-header">
+        <h2>Controls</h2>
+        <p>Model predictive control, state estimation, and real-time implementations.</p>
+      </header>
+      <div id="grid-controls" class="grid"></div>
     </section>
 
+    <!-- Section 3: Aerodynamics -->
+    <section id="aero" class="section band band-aero">
+      <header class="band-header">
+        <h2>Aerodynamics</h2>
+        <p>CFD studies, drag/downforce trade-offs, and parametric design.</p>
+      </header>
+      <div id="grid-aero" class="grid"></div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="section">
       <h2>Contact</h2>
       <form id="contactForm" class="card form" action="https://formspree.io/f/yourFormId" method="POST">
@@ -82,10 +94,9 @@
 
   <footer class="site-footer">
     <span>© <span id="year"></span> Nachiket Kulkarni</span>
-    <a href="https://github.com/<your-username>/portfolio" target="_blank" rel="noopener">Source</a>
+    <a href="https://github.com/<your-username>/<repo-name>" target="_blank" rel="noopener">Source</a>
   </footer>
 
   <script type="module" src="./script.js"></script>
-  <script type="module" src="./projects.js"></script>
 </body>
 </html>
