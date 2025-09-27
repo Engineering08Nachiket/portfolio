@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Controls — Nachiket Kulkarni</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><a href="./" style="text-decoration:none;color:inherit;">NK</a></div>
+    <nav class="nav">
+      <a href="./aero.html">Aerodynamics</a>
+      <a href="./controls.html" class="active">Controls</a>
+      <a href="./nvh.html">Noise & Vibrations</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-img">
+      <img src="./assets/controls.png" alt="Controls hero">
+      <h1>CONTROLS</h1>
+    </section>
+
+    <section class="section">
+      <p class="muted">Add MPC, estimation, and real-time demos here.</p>
+      <article class="card" style="margin-top:16px;">
+        <h3>Lane-Keeping MPC (6-state vehicle model)</h3>
+        <p>Curvature preview, QP constraints, and Simulink integration for real-time lane keeping.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Nachiket Kulkarni</span>
+    <a href="./">Back to Home</a>
+  </footer>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
